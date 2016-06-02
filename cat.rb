@@ -18,7 +18,7 @@ class Cat
       else
         return @meal_time.to_s + "AM"
       end
-    endr
+    end
   end
 end
 
