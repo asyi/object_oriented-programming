@@ -8,8 +8,7 @@ class Cat
       @meal_time = meal_time
 
       def meow
-        puts "My name is #{@name} and I eat #{@preferred_food} at #{eats_at}."
-        self
+        "My name is #{@name} and I eat #{@preferred_food} at #{eats_at}."
       end
 
     def eats_at
@@ -22,6 +21,7 @@ class Cat
   end
 end
 
-crookshanks = Cat.new("Crookshanks", "fish", 14).meow
-
-kitty = Cat.new("Kitty", "cake", 6).meow
+crookshanks = Cat.new("Crookshanks", "fish", 14)
+puts crookshanks.meow
+kitty = Cat.new("Kitty", "cake", 6)
+puts kitty.meow
